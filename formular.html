@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscriere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="formular.css">
+</head>
+<body>
+    <div class="c1"> 
+        <img src="Images/bucuram.png" alt="bucuram" class="bucuram"> 
+        <div class="container">
+            <div class="title">Inscriere</div>
+
+
+
+            <form action="process-form.php" method="POST">
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nume</span>
+                        <label for="Nume"></label>
+                        <input type="text" placeholder="Introdu numele" required id="Nume" name="Nume">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Prenume</span>
+                        <label for="Prenume"></label>
+                        <input type="text" placeholder="Introdu Prenume" required id="Prenume" name="Prenume">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Varsta</span>
+                        <label for="Varsta"></label>
+                        <input type="number" placeholder="Introdu Varsta" required id="Varsta" name="Varsta">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Marime Tricou</span>
+                        <label for="Marime"></label>
+                        <input type="text" placeholder="Introdu Marime" required id="Marime" name="Marime">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <label for="Email"></label>
+                        <input type="text" placeholder="Introdu Email" required id="Email" name="Email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Telefon</span>
+                        <label for="Telefon"></label>
+                        <input type="number" placeholder="Introdu Telefon +(07)" required id="Telefon" name="Telefon">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Traseu:</span>
+                        <label for="Telefon"></label>
+                        <input type="text" placeholder="Semi-Maraton/Maraton" required id="Traseu" name="Traseu">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Afiliere:</span>
+                        <label for="Telefon"></label>
+                        <input type="text" placeholder="Afiliere" required id="Afiliere" name="Afiliere">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Seteaza Parola</span>
+                        <label for="parola"></label>
+                        <input type="password" placeholder="parola" required id="parola" name="parola">
+                    </div>
+                    
+                </div>
+
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <input type="radio" value="1" class="gender" name="gender">Masculin</option>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <input type="radio" value="2" class="gender" name="gender">Feminin</option>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+                
+
+            </form>
+
+          
+
+
+
+
+
+
+        </div>
+
+        <section>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+    
+    
+    
+    
+        </section>
+        <div class="backbt">
+            <button onclick="window.history.back()" class="backbutton">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+   
+</body>
+</html>

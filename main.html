@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timi-Run</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="Main-Page.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+</head>
+<body>
+
+<div class="cursor-1"></div> 
+<div class="cursor-2"></div> 
+
+<div id="menu-bars" class="fas fa-bars"></div>
+
+
+
+    <header>
+
+       <a href="Intro.html" class="logo"> <span id="TM">Timisoara </span>Run</a>
+       <nav class="navbar">
+           <a href="detalii.html">Detalii</a>
+           <a href="galerie.html">Galerie</a>
+           <a href="formular.html">Inscriere</a>
+           <a href="Traseu.html">Traseu </a>
+           <a href="participanti.php">Participanti</a>   
+       </nav>
+
+       <div class="follow">
+        
+        <a href="https://www.artstation.com/wildenza" class="fab fa-artstation"></a>
+        <a href="https://github.com/wildenza" class="fab fa-github"></a>
+       </div>
+
+
+    </header>
+
+     <section class="home" id="home">
+
+        <div class="content">
+            <div class="cifre">
+                <span>1,</span>
+                <span>2,</span>
+                <span>3</span>
+                <span>..</span>
+                <span>START</span>
+
+
+
+            </div>
+            <p class="info"> Unul dintre cele mai mari evenimente de alergat din Timisoara si nu numai <span id="exclamare">!</span></p>
+            <hr class="hr">
+            <p class="text">Indiferent dacă ești un alergător experimentat sau te lansezi în această aventură pentru prima oară, acest maraton va reprezenta o experiență de neuitat. Înscrie-te și fă parte din această poveste a rezistenței și curajului!</p>
+           
+            
+        </div>
+        <div class="image">
+            <model-viewer src="Runners.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="2" auto-rotate exposure="0.97" style="width: 100%; height: 800px;">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
+            
+        </div>
+     </section>
+    <script src="main.js"></script>
+
+    
+
+
+
+
+</body>
+</html>

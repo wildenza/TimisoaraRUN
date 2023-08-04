@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.c1{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,wheat,rgb(238, 209, 155),#f7a14c,#f58f2a);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: wheat;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+   margin-bottom: 15px;
+    width: calc(100% / 2  - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom:5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: orange;
+}
+
+form .gender-details .gender-tile{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+form .gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-right:10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: white;
+}
+form input[type="radio"]{
+    display: none;
+
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: 0.4s ease-in-out;
+    background: orange;
+}
+
+
+form .back input{
+    height: 100%;
+    width: 12%;
+    outline:none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    background: rgb(177, 176, 175);
+}
+
+form .back input:hover{
+    background: rgb(53, 53, 53);
+    transition: 0.6s ease-in-out;
+}
+@media(max-width: 584px){
+   .container{
+    max-width: 100%;
+   } 
+   form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+ }
+ form .gender-details .category{
+  width: 100%;
+}
+.container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+    width: 0;
+}
+}
+
+
+
+.c1 .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/SiteEWD/Images/wave.png);
+    background-size: 1000px 100px;
+}
+
+
+.c1 .wave.wave1{
+  animation: animate 30s linear infinite ;  
+  z-index:1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.c1 .wave.wave2{
+    animation: animate2 15s linear infinite ;  
+    z-index:999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+
+  .c1 .wave.wave3{
+    animation: animate3 15s linear infinite ;  
+    z-index:998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+
+  
+  .c1 .wave.wave4{
+    animation: animate4 5s linear infinite ;  
+    z-index:997;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 20px;
+  }
+
+.bucuram{
+    height: 700px;
+    position: absolute;
+    margin-bottom: 500px;
+    margin-left: -1150px;
+    margin-right: 0;
+    animation: bucuram 3s ease-in-out infinite;
+}
+@keyframes bucuram{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    }
+
+
+    @keyframes animate2{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: -1000px;
+        }
+        }
+
+
+        @keyframes animate3{
+            0%{
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: -1000px;
+            }
+            }
+
+
+            @keyframes animate4{
+                0%{
+                    background-position-x: 0;
+                }
+                100%{
+                    background-position-x: -1000px;
+                }
+                }
+
+
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.backbt {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+  }
+
+.backbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.backbutton i {
+    font-size: 2.5rem;
+    color: white;
+}

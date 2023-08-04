@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.container{
+    position:relative;
+}
+.container .slide-container .slide{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.container .slide-container .slide video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: fadeIn .4s linear;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.5);
+    }
+}
+
+.container .slide-container .slide .content{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background:rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.container .slide-container .slide .content h3{
+    padding: 10%;
+    font-size: 60px;
+    color: white;
+    text-shadow:  0 5px 10px rgba(0,0,0,.3);
+    animation: animate .4s linear .4s backwards;
+}
+
+.timisoara{
+    color: orange;
+}
+
+.container .slide-container .slide .content p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 5% 0;
+    font-weight: lighter;
+    text-shadow:  0 5px 10px rgba(0,0,0,.3);
+    max-width: 700px;
+    animation: animate .4s linear .6s backwards;
+}
+
+/*#shine {
+    background-image: linear-gradient(
+        -75deg,
+        transparent 0,
+        transparent 1%,
+        rgba(255, 210, 8, 0.5) 5%,
+        rgba(255, 255, 255, 0.5) 100%,
+        transparent 10%,
+        transparent 100%
+    );
+    background-size: 200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 1.2s;
+}
+
+#shine:hover {
+    background-position: -120% 0;
+}
+*/
+
+
+
+.container .slide-container .slide .content .btn{
+    display: block;
+    padding: 9px 30px;
+    font-size: 17px;
+    color: #333;
+    background: white;
+    text-shadow:  0 5px 10px rgba(0,0,0,.3);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: .2s linear;
+    animation: animate .4s linear .1s backwards;
+
+}
+
+.container .slide-container .slide .content .btn:hover {
+    letter-spacing: 2px;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(.5) translateY(-50px);
+    }
+}
+
+.container .slide-container{
+    display: none;
+}
+
+.container .slide-container.active{
+    display: block;
+}
+
+#back{
+    display: flex;
+    height: 40px;
+    position: absolute;
+    top: 3%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: white;
+    font-weight: bold;
+    line-height: 55px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20%;
+    
+}
+
+.container #next,
+.container #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: white;
+    color:black;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.div_insc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 150px;
+    height: 80px;
+}
+
+
+
+.btn_insc{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-radius: 5%;
+    background: rgb(250, 250, 250);
+}
+
+.container #next{
+    right: 0;
+    user-select: none;
+}
+
+.container #prev{
+    left: 0;
+    user-select: none;
+}
+.backbt {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+  }
+
+.backbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.backbutton i {
+    font-size: 2.5rem;
+    color: white;
+}

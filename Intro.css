@@ -1,0 +1,91 @@
+
+
+
+
+
+.preload{
+    font-family: 'Roboto', sans-serif; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: wheat;
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: .5s linear;
+}
+
+.preload.loaded{
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+
+.circle{
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-block-start-color:orange;
+    margin-block-end: 45px;
+    animation: rotate360 1s linear infinite;
+
+}
+
+@keyframes rotate360{
+    0% { transform: rotate(0);}
+    100%{ transform: rotate(1turn);}
+}
+
+.preload .text{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: .4s linear;
+    padding-inline-start: 16px;
+}
+
+.preload .text span{
+    color: orange;
+}
+
+.preload .text:hover{
+    letter-spacing: 0.2rem;
+    transition: .4s linear;
+    text-transform: uppercase;
+    padding-inline-start: 16px;
+}
+
+
+.loading span{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color:#E8AA42 ;
+    border-radius:50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.loading span:nth-child(2){
+    background-color: #E57C23 ;
+    animation-delay: 0.2s;
+}
+.loading span:nth-child(3){
+    background-color: #025464;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes dots{
+    50%{
+        opacity: 0;
+        transform : scale(1.5) translateY(10px);
+    }
+}

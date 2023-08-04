@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    width: 80%;
+    padding-bottom: 100px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+    margin: 0 auto; 
+    color: #0e0e0e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin: 50px;
+
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+h1 {
+   
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(19, 161, 255);
+    padding-top: 50px;
+    position: relative;
+    min-height: 100vh; 
+    overflow: hidden; 
+  }
+
+.wave{
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/SiteEWD/Images/wave.png);
+    background-size: 1000px 100px;
+    z-index: -1;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+#Introducere{
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+.filter input{
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 18px; 
+    border-radius: 50px;
+  }
+  
+
+
+.wave.wave1{
+  animation: animate 30s linear infinite ;  
+  z-index:1000;
+  opacity:0.5;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave.wave2{
+    animation: animate2 15s linear infinite ;  
+    z-index:999;
+    opacity: 0.25;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+
+.wave.wave3{
+    animation: animate3 15s linear infinite ;  
+    z-index:998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+
+  
+ .wave.wave4{
+    animation: animate4 5s linear infinite ;  
+    z-index:997;
+    opacity: 0.25;
+    animation-delay: -2s;
+    bottom: 20px;
+  }
+
+  .backbt {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    
+  }
+
+.backbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+  .type{
+   display: inline-block;
+  }
+
+  .text{
+    font-size: 5e,;
+    letter-spacing: 10px;
+    
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(26),
+        cursor .4s step-end infinite alternate;
+  }
+  @keyframes cursor{
+    50%{ border-color:  transparent}
+  }
+  @keyframes typing{
+    from{width: 0}
+  }
+
+  @keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    }
+
+
+    @keyframes animate2{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: -1000px;
+        }
+        }
+
+
+        @keyframes animate3{
+            0%{
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: -1000px;
+            }
+            }
+
+
+            @keyframes animate4{
+                0%{
+                    background-position-x: 0;
+                }
+                100%{
+                    background-position-x: -1000px;
+                }
+                }
