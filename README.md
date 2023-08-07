@@ -10,6 +10,10 @@ This project has served a great learning path for me, managing to lay an adequat
   As a warning and a future note for me, the files could have been structured better & the file size could have been drastically reduced, as for now the current project size is quite heavy
 </p>
 
+![](EXPO/Capture1.PNG)
+![](EXPO/Capture2.PNG)
+![](EXPO/Capture3.PNG)
+
 
 
 
